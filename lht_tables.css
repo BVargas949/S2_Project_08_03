@@ -17,11 +17,86 @@
    Mobile Styles: 0px to 640px 
    ===============================
 */
+@media only screen and (max-width:640px) {
+
+    table,
+    tbody,
+    tr,
+    td,
+    th,
+    caption {
+        display: block;
+    }
+
+    thead,
+    h1 {
+        display: none;
+    }
+
+    caption {
+        display: block;
+        color: white;
+        background-color: rgb(100, 100, 100);
+        font-size: 1.5em;
+        line-height: 2em;
+    }
 
 
 
+    td {
+        border: 1px dotted gray;
+        ruby-align: rgb(11, 12, 145);
+        position: relative;
+        padding-left: 40%;
+        min-height: 40px;
+    }
+
+    tr:nth-of-type(odd) {
+        background-color: rgb(255, 235, 178);
+        border: 2px solid gray;
+    }
+
+    td::before {
+
+        position: (0, 0);
+        width: 40%;
+        padding: 5px;
+    }
+}
 
 /* =============================================
    Tablet and Desktop Styles: greater than 640px
    =============================================
 */
+@media only screen and (min-width:641px) {
+    table {
+        background: url(lht_photo1.png) no-repeat 40%;
+        background-position: bottom right;
+        background-size: 40%;
+        border: 6px double rgb(154, 64, 3);
+        border-collapse: collapse;
+        margin: 20px auto 20px auto;
+        table-layout: fixed;
+        width: 85%;
+    }
+
+    th,
+    td {
+        border: 1px solid gray;
+        font-size: 0.85em;
+        font-weight: normal;
+        padding: 5px;
+        text-align: top;
+        width: 14.28%;
+        word-wrap: normal;
+    }
+
+    td {
+        background-color: rgba(171, 171, 171, 0.6);
+        color: rgb(11, 12, 145);
+    }
+
+    td [date-date^='feb'] {
+        background-color: rgba(232, 214, 148, 0.6);
+    }
+}
