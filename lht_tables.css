@@ -13,6 +13,8 @@
 
 */
 
+/* Within he media query lies various specifications for mobile devices. The table, tbody, tr, td, th, caption  were alldisplayed in block. the table heading and h1 selectors were not displayed. The caption was given white text, reay background color, new font size of 1.5 em units, line height of 2 em units. The data cell were given a gray dotted border that is one pixel unit wide, forty pixel units of  padding onthe left, and a minimum height of forty pixel units. The odd table rows(tr) were given a newbackground color and a gray solid border that is 2 pixel units wide. */
+
 /* ===============================
    Mobile Styles: 0px to 640px 
    ===============================
@@ -64,6 +66,8 @@
     }
 }
 
+/* A media query was made for tablet and desktop sceens which contained new specifications. The background was replaced with an image that is not repeating and 40% bigger than the images original form. The table selector was given a double border that is six pixel units wide, the borders were colapsed, margin spacewas added to center the table, the layout was fixed, the width was changed to 85% when related to the body. The table header (th) and table cells(td) were given a gray solid border thats one pixel unit wide, fon size of 0.85 em units, ont weight of normal, padding office pixelunits all around, text aligned to thetop, width of 14.28% whennrelated to the table, and wordwrap of normal. The data cells with an attribute of "feb" were tsrgeted andgiven a new backround color aswell as a box shadow. The tabe headings were given the same treatment.  */
+
 /* =============================================
    Tablet and Desktop Styles: greater than 640px
    =============================================
@@ -96,7 +100,20 @@
         color: rgb(11, 12, 145);
     }
 
-    td [date-date^='feb'] {
+    td[date-date*="feb"] {
         background-color: rgba(232, 214, 148, 0.6);
+        box-shadow: inset 0px 0px 20px gray;
+    }
+
+    table caption {
+        text-align: center top;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+    }
+
+    thead th {
+        background-color: rgb(154, 64, 3);
+        color: white;
     }
 }

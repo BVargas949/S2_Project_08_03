@@ -13,6 +13,13 @@
 
 */
 
-
+/* The col selector was used to give specifications to the columns which included a width of260 pixel units, creating a 20 pixel wide gap between columns, a solid border of one pixel unit, a minimum of 2 widows and orphans. */
 
 /* Column Styles */
+article col {
+   width: 260px;
+   column-gap: 20px;
+   border: 1px solid rgb(154, 64, 31);
+   widows: 2;
+   orphans: 2;
+}
